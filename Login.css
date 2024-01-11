@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('Back1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: transparent;
+}
+
+.logo{
+    font-size: 20px;
+    user-select: none;
+    color: orange;
+}
+
+.navigation a{
+    position: relative;
+    font-weight: 500;
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navigation .loginbtn{
+    width: 130px;
+    height: 50px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: none;
+    font-size: 1rem;
+    outline: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navigation .loginbtn:hover{
+    color: white;
+    background-color: black;
+}
+
+.container{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    overflow: hidden;
+    transition: transform .5s ease, height .2s ease;
+}
+
+.container.active{
+    height: 520px;
+}
+
+.container .form.login{
+    transition: .18s ease;
+    transform: translateX(0);
+}
+
+.container.active .form.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.container .form.register {
+    position: absolute;
+    transition: .18s ease;
+    transform: translateX(400px); /* Change from -400px to 400px */
+}
+
+.container.active .form.register {
+    transition: none;
+    transform: translateX(0);
+}
+
+.container.active-popup{
+    transform: scale(0);
+}
+
+/*.container .login{
+    display: none;
+}*/
+
+.container .closeIcon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(4, 4, 22);
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.container .form{
+    width: 100%;
+    padding: 40px;
+}
+
+.form h2{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input input:focus~label,
+.input input:valid~label{
+    top: -5px;
+}
+
+.input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    color: black;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+}
+
+.input ion-icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: black;
+    line-height: 57px;
+}
+
+.remember{
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.remember a{
+    color: blue;
+    text-decoration: none;
+}
+
+.remember a:hover{
+    text-decoration: underline;
+}
+
+.submitbtn{
+    width: 100%;
+    height: 45px;
+    background: rgb(2, 2, 22);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.register p{
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register a{
+    color: blue;
+    text-decoration: none;
+    font-weight: 600
+}
+
+.register a:hover{
+    text-decoration: underline;
+}
