@@ -28,6 +28,6 @@ This project is licensed under the Apache License 2.0, ensuring an open and coll
 We welcome your feedback and contributions to make this to-do list app even better! Feel free to open issues, suggest enhancements, or contribute code.
 
 # Get Started:
-Visit [Demo Link] to try out the app.
+Visit https://nextlist.000webhostapp.com/Home.html to try out the app.
 
 Let's make task management simpler together!
