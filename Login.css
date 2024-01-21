@@ -63,7 +63,7 @@ header{
 
 .container{
     position: relative;
-    max-width: 800px;
+    max-width: 700px;
     height: 450px;
     background: transparent;
     border: 2px solid transparent;
@@ -270,7 +270,7 @@ header{
 
   .container {
     max-width: 650px;
-    height: 500px;
+    height: 400px;
     border-radius: 10px;
     box-shadow: 0 0 10px;
   }
