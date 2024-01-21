@@ -204,7 +204,7 @@ footer {
     text-align: left;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   body {
     font-size: 10px;
   }
@@ -213,7 +213,7 @@ footer {
     padding: 20px 20px;
     max-height: 30px;
     font-size: 3px;
-    max-width: 450px;
+    max-width: 550px;
   }
 
   .logo,
@@ -229,17 +229,17 @@ footer {
   }
 
   .newTask {
-    max-width: 450px;
+    max-width: 350px;
   }
 
   .text {
-    max-width: 450px;
+    max-width: 350px;
   }
 
   .add-new-task,
   .task-list,
   .input-new-task {
-    max-width: 450px;
+    max-width: 350px;
   }
 
   .footerContent {
@@ -250,32 +250,4 @@ footer {
   .social-links a {
     margin: 10px 0;
   }
-}
-
-.footerContent {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contact-info {
-    text-align: left;
-}
-
-.social-links a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 10px;
-    font-size: 1.2em;
-    line-height: 57px;
-}
-
-.copyright {
-    margin-top: 20px;
-}
-
-.info{
-    text-align: left;
 }
