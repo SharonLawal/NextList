@@ -203,3 +203,79 @@ footer {
 .info{
     text-align: left;
 }
+
+@media (max-width: 450px) {
+  body {
+    font-size: 10px;
+  }
+  
+  header {
+    padding: 20px 20px;
+    max-height: 30px;
+    font-size: 3px;
+    max-width: 450px;
+  }
+
+  .logo,
+  .navigation a,
+  .navigation .loginbtn{
+    font-size: 10px;    
+  }
+  
+  .navigation .loginbtn {
+      width: 90px;
+      height: 20px;
+      border: 0.5px solid white;
+  }
+
+  .newTask {
+    max-width: 450px;
+  }
+
+  .text {
+    max-width: 450px;
+  }
+
+  .add-new-task,
+  .task-list,
+  .input-new-task {
+    max-width: 450px;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links a {
+    margin: 10px 0;
+  }
+}
+
+.footerContent {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+.info{
+    text-align: left;
+}
